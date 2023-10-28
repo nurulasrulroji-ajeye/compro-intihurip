@@ -4,6 +4,7 @@ import {
   GithubIcon,
   IgIcon,
   LinkedInIcon,
+  LogoIcon,
   MediumIcon,
 } from '../assets';
 import { SocmedList, TSocmed } from './socmed-list';
@@ -43,7 +44,9 @@ export const Footer = () => {
       <div className="pt-20 px-4 lg:px-56 w-full bg-red-primary pb-5">
         <div className="w-full flex flex-col gap-8 lg:flex-row lg:justify-center lg:gap-16 lg:items-end">
           <div className="max-w-[188px] lg:max-w-xs text-[0.65rem] lg:text-base text-white-color flex flex-col gap-4 ">
-            <p>Logo</p>
+            <div>
+              <LogoIcon className="text-9xl" />
+            </div>
             <p className=" ">
               Jl. Timor Timur E 6 C, Desa/Keluarahan Siduandi, Kec. Mlati, Kab.
               Sleman, Provinsi Daerah Istimewa Yogyakarta.{' '}

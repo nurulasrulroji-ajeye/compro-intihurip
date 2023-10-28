@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-scroll';
+import { LogoIcon } from '../assets';
 
 export const Navbar = () => {
   const [scrollDir, setScrollDir] = useState('scrolling down');
@@ -44,26 +45,30 @@ export const Navbar = () => {
         <nav
           className={`${
             scrollY > 50 ? 'shadow-6 bg-red-primary ' : ''
-          } w-full flex justify-between px-8 py-2 items-center lg:py-5 rounded-xl `}
+          } w-full flex justify-between px-4 lg:px-8 py-2 items-center rounded-xl `}
         >
-          <div>Logo</div>
+          <div>
+            <LogoIcon className="text-5xl lg:text-6xl text-white-color" />
+          </div>
           <div className="hidden lg:flex gap-6">
-            <div className="font-semibold uppercase text-white-color">
+            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
               <Link activeClass="font-bold" smooth spy to="about">
                 Tentang Kami
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color">
+            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
               <Link activeClass="font-bold" smooth spy to="vimi">
                 Visi Misi
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color">
+            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
               <Link activeClass="font-bold" smooth spy to="produk">
                 Produk Kami
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color">Info</div>
+            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
+              Info
+            </div>
           </div>
           <div className="lg:hidden flex">
             <Hamburger
@@ -95,13 +100,37 @@ export const Navbar = () => {
         <div className="fixed inset-0 z-20 bg-red-primary pt-32 px-4 lg:hidden ">
           <div className="flex gap-6 flex-col">
             <div className="font-semibold uppercase text-white-color">
-              Tentang Kami
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="font-bold"
+                smooth
+                spy
+                to="about"
+              >
+                Tentang Kami
+              </Link>
             </div>
             <div className="font-semibold uppercase text-white-color">
-              Visi Misi
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="font-bold"
+                smooth
+                spy
+                to="vimi"
+              >
+                Visi Misi
+              </Link>
             </div>
             <div className="font-semibold uppercase text-white-color">
-              Produk Kami
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="font-bold"
+                smooth
+                spy
+                to="produk"
+              >
+                Produk Kami
+              </Link>
             </div>
             <div className="font-semibold uppercase text-white-color">Info</div>
           </div>
