@@ -9,8 +9,6 @@ const tabData: TTabs[] = [
   { id: '4', name: 'Laut' },
 ];
 
-const DATA_PRODUCT = [];
-
 export const Product = () => {
   const [tab, setTab] = useState<string>(tabData[0].id);
   return (
@@ -37,6 +35,7 @@ export const Product = () => {
               <TiketPesawatIcon className="text-[12rem] text-red-primary" />
             </div>
             <div className="max-w-[15rem]">
+              yli9o0
               <p className="text-lg font-semibold">Tiket Pesawat</p>
               <p className="text-sm text-typo-neutral-80">
                 Kami mendukung semua maskapai penerbangan
@@ -59,3 +58,4 @@ export const Product = () => {
     </div>
   );
 };
+6;
