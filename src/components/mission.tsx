@@ -158,36 +158,40 @@ export const Mission = () => {
         <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 md:max-w-lg lg:grid-cols-4 lg:max-w-4xl lg:w-full">
           <div className="p-5 rounded-lg shadow-6 bg-white-color flex flex-col gap-2">
             <TicketSVG className="text-2xl text-red-primary" />
-            <p className="text-xl font-medium text-red-700">Modern Bisnis</p>
+            <p className="text-xl font-medium text-red-700">
+              Layanan Pelanggan Terbaik
+            </p>
             <p className="text-sm text-red-700">
-              Memperkenalkan serta mengedukasi tentang apa itu bisnis era
-              digital{' '}
+              Tim layanan pelanggan kami selalu siap membantu Anda, dari
+              perencanaan hingga setelah perjalanan Anda selesai.
             </p>
           </div>
           <div className="p-5 rounded-lg shadow-6 bg-white-color flex flex-col gap-2">
             <PackageSVG className="text-2xl text-red-primary" />
             <p className="text-xl font-medium text-red-700">
-              Kemudahan Perjalanan
+              Fleksibilitas dan Pilihan
             </p>
             <p className="text-sm text-red-700">
-              Memperkenalkan serta mengedukasi tentang apa itu bisnis era
-              digital{' '}
+              Kami memberikan Anda kemampuan untuk memilih dari beragam pilihan
+              perjalanan, sesuai dengan keinginan dan kebutuhan Anda.{' '}
             </p>
           </div>
           <div className="p-5 rounded-lg shadow-6 bg-white-color flex flex-col gap-2">
             <CloudSVG className="text-2xl text-red-primary" />
-            <p className="text-xl font-medium text-red-700">Trend Produk</p>
+            <p className="text-xl font-medium text-red-700">Pengalaman Luas</p>
             <p className="text-sm text-red-700">
-              Memperkenalkan serta mengedukasi tentang apa itu bisnis era
-              digital{' '}
+              Kami telah menjelajahi dunia dan berbagi pengetahuan dan wawasan
+              kami untuk membuat perjalanan Anda lebih berharga.
             </p>
           </div>
           <div className="p-5 rounded-lg shadow-6 bg-white-color flex flex-col gap-2">
             <ShieldSVG className="text-2xl text-red-primary" />
-            <p className="text-xl font-medium text-red-700">Keamanan Sistem</p>
+            <p className="text-xl font-medium text-red-700">
+              Dukungan Personal
+            </p>
             <p className="text-sm text-red-700">
-              Memperkenalkan serta mengedukasi tentang apa itu bisnis era
-              digital{' '}
+              Kami memprioritaskan kepuasan pelanggan, dan tim kami selalu siap
+              membantu Anda, kapan saja dan di mana saja.
             </p>
           </div>
         </div>

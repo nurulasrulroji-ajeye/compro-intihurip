@@ -44,29 +44,75 @@ export const Navbar = () => {
       <header className="fixed top-2 z-50 w-full px-4 lg:px-56">
         <nav
           className={`${
-            scrollY > 50 ? 'shadow-6 bg-red-primary ' : ''
+            scrollY > 50 ? 'shadow-6 bg-white-color ' : ''
           } w-full flex justify-between px-4 lg:px-8 py-2 items-center rounded-xl `}
         >
-          <div>
-            <LogoIcon className="text-5xl lg:text-6xl text-white-color" />
+          <div className="flex items-center gap-1">
+            <div
+              className={`${
+                scrollY > 50
+                  ? ''
+                  : 'w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white-color shadow-6 flex justify-center items-center'
+              }`}
+            >
+              <LogoIcon
+                className={`${
+                  scrollY > 50
+                    ? 'text-red-primary transition-all ease-in-out duration-700 text-5xl lg:text-6xl'
+                    : 'text-red-primary text-4xl lg:text-5xl'
+                }  `}
+              />
+            </div>
+            <p
+              className={`${
+                scrollY > 50 ? 'text-red-primary ' : 'text-white-color'
+              } text-sm font-bold`}
+            >
+              PT. INTI HURIP
+              <br /> (INTI TOUR & TRAVEL)
+            </p>
           </div>
           <div className="hidden lg:flex gap-6">
-            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
+            <div
+              className={`${
+                scrollY > 50
+                  ? 'text-red-primary transition-all ease-in-out duration-700'
+                  : 'text-white-color'
+              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+            >
               <Link activeClass="font-bold" smooth spy to="about">
                 Tentang Kami
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
+            <div
+              className={`${
+                scrollY > 50
+                  ? 'text-red-primary transition-all ease-in-out duration-700'
+                  : 'text-white-color'
+              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+            >
               <Link activeClass="font-bold" smooth spy to="vimi">
                 Visi Misi
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
+            <div
+              className={`${
+                scrollY > 50
+                  ? 'text-red-primary transition-all ease-in-out duration-700'
+                  : 'text-white-color'
+              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+            >
               <Link activeClass="font-bold" smooth spy to="produk">
                 Produk Kami
               </Link>
             </div>
-            <div className="font-semibold uppercase text-white-color cursor-pointer hover:text-white-color/80">
+            <div
+              className={`${
+                scrollY > 50
+                  ? 'text-red-primary transition-all ease-in-out duration-700'
+                  : 'text-white-color'
+              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+            >
               Info
             </div>
           </div>
@@ -82,7 +128,7 @@ export const Navbar = () => {
               }}
               size={20}
               rounded
-              color="#fff"
+              color={scrollY > 50 ? '#F45050' : '#fff'}
             />
           </div>
         </nav>

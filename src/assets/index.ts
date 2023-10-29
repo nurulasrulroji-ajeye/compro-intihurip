@@ -16,5 +16,6 @@ import DribleIcon from "./drible.svg?react"
 import TiketPesawatIcon from "./tiketpesaat.svg?react"
 import AdventureIcon from "./adventure.svg?react"
 import LogoIcon from "./logo.svg?react"
+import WaIcon from "./whatsapp.svg?react"
 
-export { TravelSVG, ChecklistSVG, MissionSVG, ChevrontDownSVG, ChevrontUpSVG, TicketSVG, PackageSVG, ShieldSVG, CloudSVG, DiscordIcon, DribleIcon, GithubIcon, IgIcon, LinkedInIcon, MediumIcon, TiketPesawatIcon, AdventureIcon, LogoIcon }
+export { TravelSVG, ChecklistSVG, MissionSVG, ChevrontDownSVG, ChevrontUpSVG, TicketSVG, PackageSVG, ShieldSVG, CloudSVG, DiscordIcon, DribleIcon, GithubIcon, IgIcon, LinkedInIcon, MediumIcon, TiketPesawatIcon, AdventureIcon, LogoIcon, WaIcon }

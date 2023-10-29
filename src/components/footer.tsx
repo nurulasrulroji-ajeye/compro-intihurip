@@ -1,41 +1,37 @@
-import {
-  DiscordIcon,
-  DribleIcon,
-  GithubIcon,
-  IgIcon,
-  LinkedInIcon,
-  LogoIcon,
-  MediumIcon,
-} from '../assets';
+import { IgIcon, LogoIcon, WaIcon } from '../assets';
 import { SocmedList, TSocmed } from './socmed-list';
 
 export const SocmedData: TSocmed[] = [
-  { id: 1, icon: <IgIcon />, link: 'https://www.instagram.com/ajeye_/?hl=id' },
+  {
+    id: 1,
+    icon: <IgIcon />,
+    link: 'https://www.instagram.com/intihurip_travel/',
+  },
   {
     id: 2,
-    icon: <LinkedInIcon />,
-    link: 'https://www.linkedin.com/in/nurul-asrul-roji-092610238/',
+    icon: <WaIcon />,
+    link: 'https://wa.me/+62',
   },
-  {
-    id: 3,
-    icon: <GithubIcon />,
-    link: 'https://github.com/nurulasrulroji-ajeye',
-  },
-  {
-    id: 4,
-    icon: <DiscordIcon />,
-    link: 'https://discord.com/channels/@ajeye_',
-  },
-  {
-    id: 5,
-    icon: <MediumIcon />,
-    link: 'https://medium.com/@asrulrojin',
-  },
-  {
-    id: 6,
-    icon: <DribleIcon />,
-    link: 'https://dribbble.com/ajeye15',
-  },
+  // {
+  //   id: 3,
+  //   icon: <GithubIcon />,
+  //   link: 'https://github.com/nurulasrulroji-ajeye',
+  // },
+  // {
+  //   id: 4,
+  //   icon: <DiscordIcon />,
+  //   link: 'https://discord.com/channels/@ajeye_',
+  // },
+  // {
+  //   id: 5,
+  //   icon: <MediumIcon />,
+  //   link: 'https://medium.com/@asrulrojin',
+  // },
+  // {
+  //   id: 6,
+  //   icon: <DribleIcon />,
+  //   link: 'https://dribbble.com/ajeye15',
+  // },
 ];
 
 export const Footer = () => {
@@ -44,20 +40,22 @@ export const Footer = () => {
       <div className="pt-20 px-4 lg:px-56 w-full bg-red-primary pb-5">
         <div className="w-full flex flex-col gap-8 lg:flex-row lg:justify-center lg:gap-16 lg:items-end">
           <div className="max-w-[188px] lg:max-w-xs text-[0.65rem] lg:text-base text-white-color flex flex-col gap-4 ">
-            <div>
+            <div className="flex flex-col w-fit">
               <LogoIcon className="text-9xl" />
+              <p className="text-sm font-semibold">
+                PT. INTI HURIP
+                <br /> (INTI TOUR & TRAVEL)
+              </p>
             </div>
             <p className=" ">
-              Jl. Timor Timur E 6 C, Desa/Keluarahan Siduandi, Kec. Mlati, Kab.
-              Sleman, Provinsi Daerah Istimewa Yogyakarta.{' '}
+              jl. kisamaun no.179 kel. sukasari kec. tanggerang kota tanggerang{' '}
             </p>
             <div>
               <p>
-                <span className="font-semibold">Phone</span>: +62 8132 3456 7890
+                <span className="font-semibold">Phone</span>: +62 21 5521479
               </p>
               <p>
-                <span className="font-semibold">Email:</span>{' '}
-                fazzaskin.id@gmail.com
+                <span className="font-semibold">Fax:</span> 021-5588175
               </p>
             </div>
           </div>
@@ -74,8 +72,8 @@ export const Footer = () => {
         </div>
         <div className="py-5 mt-6 lg:mt-16 w-full bg-white-color rounded-xl text-center">
           <p className="text-xs text-red-primary">
-            © Copyright <span className="font-semibold">Fazza Beauty</span> .
-            All Rights Reserved
+            © Copyright <span className="font-semibold">Inti Hurip Travel</span>{' '}
+            2017 . All Rights Reserved
           </p>
         </div>
       </div>

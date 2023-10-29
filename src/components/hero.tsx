@@ -8,13 +8,17 @@ export const Hero = () => {
       </div>
       <div className="w-full flex flex-col items-center text-center lg:text-left lg:items-start px-2 gap-3 ">
         <p className="text-2xl font-bold text-white-color lg:text-4xl lg:max-w-[490px]">
-          Solusi Terbaik Untuk Meningkatkan Income Kamu
+          Mewujudkan Impian Perjalanan Anda
         </p>
         <p className="text-white-color font-medium lg:max-w-[490px]">
-          Perluas Jaringan Bisnis Dan Bangun Team Hebat Kamu Untuk Sukses
-          Bersama
+          Layanan terbaik adalah prioritas
         </p>
-        <button className="shadow-1 bg-white-color py-3 px-8 rounded-full mt-3 font-semibold hover:bg-red-primary hover:border hover:border-white-color hover:text-white-color transition-all ease-in-out duration-500">
+        <button
+          className="shadow-1 bg-white-color text-red-primary  py-3 px-8 rounded-full mt-3 font-semibold hover:bg-red-primary hover:border hover:border-white-color hover:text-white-color transition-all ease-in-out duration-500"
+          onClick={() => {
+            window.open('https://wa.me/+62', '_blank')?.focus();
+          }}
+        >
           Hubungi Kami
         </button>
       </div>

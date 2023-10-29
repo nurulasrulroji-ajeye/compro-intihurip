@@ -10,25 +10,13 @@ export const About = () => {
       <div className="w-full flex flex-col lg:flex-row lg:justify-center mt-6 lg:mt-10 gap-6 lg:gap-10">
         <div className="flex flex-col gap-3 max-w-[462px]">
           <p className="text-sm lg:text-base">
-            PT. Inti Hirup Travel atau lebih dikenal dengan Inti Hirup Travel
-            adalah merupakan salah satu Travel Agent modern pertama di Indonesia
-            yang berdiri sejak tahun 1969. Sebagai perusahaan yang bergerak
-            dalam bidang Tour & Travel Management selama lebih dari 40 tahun,
-            Inti Hirup Travel secara konsisten mempertahankan posisi terdepan di
-            lingkungan perusahaan, personal dan kelembagaan dalam pengelolaan
-            perjalanan seperti perjalanan ibadah Umroh dan Haji Khusus,
-            pemasaran produk World Wide Rail Pass / Ticket ( Tiket Kereta Eropa,
-            Jepang, Australia, dll), Incentive Tours, MICE, City Package,
-            Europe’s Football Match serta insentif kegiatan Tour lainnya dengan
-            biaya yang dapat disesuaikan dengan anggaran.
-          </p>
-
-          <p className="text-sm lg:text-base">
-            Dengan keahlian dalam bidang Tour & Travel Management, Inti Hirup
-            Travel mengalami pertumbuhan yang signifikan. Kami menangani
-            berbagai kerjasama dengan berbagai jenis perusahaan yang memiliki
-            tingkat perjalanan bisnis dengan mobilisasi tinggi ke berbagai
-            tujuan domestic maupun internasional.
+            Di Init Hurip, kami menganggap perjalanan sebagai sebuah seni, bukan
+            sekadar pergi dari satu tempat ke tempat lain. Kami adalah agen
+            perjalanan yang memahami bahwa setiap perjalanan adalah peluang
+            untuk menginspirasi, menjelajahi, dan mengenali dunia dengan cara
+            yang berbeda. Dengan lebih dari 6 tahun pengalaman dalam membawa
+            impian perjalanan menjadi kenyataan, kami siap membantu Anda
+            menciptakan momen tak terlupakan.
           </p>
           <div className="w-full flex flex-col">
             <div className="flex w-full gap-3">

@@ -6,7 +6,6 @@ const tabData: TTabs[] = [
   { id: '1', name: 'Semua' },
   { id: '2', name: 'Udara' },
   { id: '3', name: 'Darat' },
-  { id: '4', name: 'Laut' },
 ];
 
 export const Product = () => {
@@ -19,9 +18,9 @@ export const Product = () => {
       </h1>
       <div className="mt-4 w-full flex flex-col gap-4">
         <p className="text-center text-sm text-typo-neutral-80">
-          Produk kecantikan yang bisa meningkatkan kepercayaan diri kamu setiap
-          harinya dengan berbagai macam varian yang dapat disesuaikan dengan
-          selera yang kamu mau
+          Jadilah mitra perjalanan kami di Inti Hurip dan bersama-sama kita akan
+          menciptakan perjalanan yang tak terlupakan. Dari darat ke udara, kami
+          membawa dunia ke depan mata Anda.
         </p>
         <Tabs
           data={tabData}
@@ -29,31 +28,61 @@ export const Product = () => {
           setActiveTab={setTab}
           layoutId="tabproduct"
         />
-        <div className="w-full flex flex-col items-center mt-2 gap-4">
-          <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
-            <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
-              <TiketPesawatIcon className="text-[12rem] text-red-primary" />
+        {tab === '1' ? (
+          <div className="w-full flex flex-col items-center mt-2 gap-4 lg:flex-row lg:justify-center">
+            <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
+              <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
+                <TiketPesawatIcon className="text-[12rem] text-red-primary" />
+              </div>
+              <div className="max-w-[15rem]">
+                <p className="text-lg font-semibold">Tiket Pesawat</p>
+                <p className="text-sm text-typo-neutral-80">
+                  Kami mendukung semua maskapai penerbangan
+                </p>
+              </div>
             </div>
-            <div className="max-w-[15rem]">
-              yli9o0
-              <p className="text-lg font-semibold">Tiket Pesawat</p>
-              <p className="text-sm text-typo-neutral-80">
-                Kami mendukung semua maskapai penerbangan
-              </p>
+            <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
+              <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
+                <AdventureIcon className="text-[12rem] text-red-primary" />
+              </div>
+              <div className="max-w-[15rem]">
+                <p className="text-lg font-semibold">Mini Bus</p>
+                <p className="text-sm text-typo-neutral-80">
+                  Kami menyediakan berbagai macam mini bus
+                </p>
+              </div>
             </div>
           </div>
-          <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
-            <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
-              <AdventureIcon className="text-[12rem] text-red-primary" />
-            </div>
-            <div className="max-w-[15rem]">
-              <p className="text-lg font-semibold">Mini Bus</p>
-              <p className="text-sm text-typo-neutral-80">
-                Kami menyediakan berbagai macam mini bus
-              </p>
+        ) : tab === '2' ? (
+          <div className="w-full flex flex-col items-center mt-2 gap-4 lg:flex-row lg:justify-center">
+            <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
+              <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
+                <TiketPesawatIcon className="text-[12rem] text-red-primary" />
+              </div>
+              <div className="max-w-[15rem]">
+                <p className="text-lg font-semibold">Tiket Pesawat</p>
+                <p className="text-sm text-typo-neutral-80">
+                  Kami mendukung semua maskapai penerbangan
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className="w-full flex flex-col items-center mt-2 gap-4 lg:flex-row lg:justify-center">
+            {' '}
+            <div className="p-2 w-fit bg-white-color rounded-xl shadow-1 flex flex-col gap-5">
+              <div className="w-60 h-40 bg-white-color flex justify-center items-center rounded-2xl shadow-6">
+                <AdventureIcon className="text-[12rem] text-red-primary" />
+              </div>
+              <div className="max-w-[15rem]">
+                <p className="text-lg font-semibold">Mini Bus</p>
+                <p className="text-sm text-typo-neutral-80">
+                  Kami menyediakan berbagai macam mini bus
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
