@@ -76,9 +76,9 @@ export const Navbar = () => {
             <div
               className={`${
                 scrollY > 50
-                  ? 'text-red-primary transition-all ease-in-out duration-700'
-                  : 'text-white-color'
-              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+                  ? 'text-red-primary transition-all ease-in-out hover:text-red-900 duration-700'
+                  : 'text-white-color hover:text-white-color/70'
+              } font-semibold uppercase  cursor-pointer `}
             >
               <Link activeClass="font-bold" smooth spy to="about">
                 Tentang Kami
@@ -87,9 +87,9 @@ export const Navbar = () => {
             <div
               className={`${
                 scrollY > 50
-                  ? 'text-red-primary transition-all ease-in-out duration-700'
-                  : 'text-white-color'
-              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+                  ? 'text-red-primary transition-all ease-in-out hover:text-red-900 duration-700'
+                  : 'text-white-color hover:text-white-color/70'
+              } font-semibold uppercase  cursor-pointer `}
             >
               <Link activeClass="font-bold" smooth spy to="vimi">
                 Visi Misi
@@ -98,9 +98,9 @@ export const Navbar = () => {
             <div
               className={`${
                 scrollY > 50
-                  ? 'text-red-primary transition-all ease-in-out duration-700'
-                  : 'text-white-color'
-              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+                  ? 'text-red-primary transition-all ease-in-out hover:text-red-900 duration-700'
+                  : 'text-white-color hover:text-white-color/70'
+              } font-semibold uppercase  cursor-pointer `}
             >
               <Link activeClass="font-bold" smooth spy to="produk">
                 Produk Kami
@@ -109,9 +109,9 @@ export const Navbar = () => {
             <div
               className={`${
                 scrollY > 50
-                  ? 'text-red-primary transition-all ease-in-out duration-700'
-                  : 'text-white-color'
-              } font-semibold uppercase  cursor-pointer hover:text-white-color/80`}
+                  ? 'text-red-primary transition-all ease-in-out hover:text-red-900 duration-700'
+                  : 'text-white-color hover:text-white-color/70'
+              } font-semibold uppercase  cursor-pointer `}
             >
               Info
             </div>
