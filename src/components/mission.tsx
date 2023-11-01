@@ -19,8 +19,8 @@ export const Mission = () => {
             <p className="text-xl text-red-primary">
               Impian Kami Dalam Membangun{' '}
               <span className="font-bold">
-                Sistem Bisnis Yang Dapat Di Pelajari Oleh Pemula Dengan
-                Bimbingan Mentor Ahli
+                Perjalanan yang tak terlupakan. Dari darat ke udara, kami
+                membawa dunia ke depan mata Anda.
               </span>
             </p>
             <div className="">

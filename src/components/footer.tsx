@@ -10,7 +10,7 @@ export const SocmedData: TSocmed[] = [
   {
     id: 2,
     icon: <WaIcon />,
-    link: 'https://wa.me/+62',
+    link: 'https://wa.me/+6281292631874',
   },
   // {
   //   id: 3,

@@ -16,7 +16,7 @@ export const Hero = () => {
         <button
           className="shadow-1 bg-white-color text-red-primary  py-3 px-8 rounded-full mt-3 font-semibold hover:bg-red-primary hover:border hover:border-white-color hover:text-white-color transition-all ease-in-out duration-500"
           onClick={() => {
-            window.open('https://wa.me/+62', '_blank')?.focus();
+            window.open('https://wa.me/+6281292631874', '_blank')?.focus();
           }}
         >
           Hubungi Kami
