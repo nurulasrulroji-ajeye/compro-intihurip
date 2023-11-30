@@ -15,7 +15,7 @@ export default {
         'typo-neutral-90': '#424242',
         'typo-neutral-100': '#0A0A0A',
 
-        'red-primary': '#F45050',
+        'red-primary': '#1BA0E2',
         'red-white-color': '#DFDFDE',
         'white-color': '#F0F0F0',
       },
