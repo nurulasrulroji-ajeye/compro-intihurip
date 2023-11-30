@@ -41,15 +41,13 @@ export const Footer = () => {
         <div className="w-full flex flex-col gap-8 lg:flex-row lg:justify-center lg:gap-16 lg:items-end">
           <div className="max-w-[188px] lg:max-w-xs text-[0.65rem] lg:text-base text-white-color flex flex-col gap-4 ">
             <div className="flex flex-col w-fit">
-              <LogoIcon className="text-9xl" />
+              <LogoIcon className="text-9xl text-[#F45050]" />
               <p className="text-sm font-semibold">
                 PT. INTI HURIP
                 <br /> (INTI TOUR & TRAVEL)
               </p>
             </div>
-            <p className=" ">
-              jl. kisamaun no.179 kel. sukasari kec. tanggerang kota tanggerang{' '}
-            </p>
+            <p className=" ">jl. kisamaun no.179 kel. sukasari kec. tanggerang kota tanggerang </p>
             <div>
               <p>
                 <span className="font-semibold">Phone</span>: +62 21 5521479
@@ -64,16 +62,15 @@ export const Footer = () => {
               Jejaring Sosial Kami
             </p>
             <p className="text-xs text-white-color lg:text-base">
-              Tomorrow fermentum hate eu feugiat lide par naso tierra videa
-              magna derita valies
+              Tomorrow fermentum hate eu feugiat lide par naso tierra videa magna derita valies
             </p>
             <SocmedList data={SocmedData} />
           </div>
         </div>
         <div className="py-5 mt-6 lg:mt-16 w-full bg-white-color rounded-xl text-center">
           <p className="text-xs text-red-primary">
-            © Copyright <span className="font-semibold">Inti Hurip Travel</span>{' '}
-            2017 . All Rights Reserved
+            © Copyright <span className="font-semibold">Inti Hurip Travel</span> 2017 . All Rights
+            Reserved
           </p>
         </div>
       </div>

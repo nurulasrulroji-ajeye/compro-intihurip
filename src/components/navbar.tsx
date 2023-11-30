@@ -58,14 +58,14 @@ export const Navbar = () => {
               <LogoIcon
                 className={`${
                   scrollY > 50
-                    ? 'text-red-primary transition-all ease-in-out duration-700 text-5xl lg:text-6xl'
-                    : 'text-red-primary text-4xl lg:text-5xl'
+                    ? 'text-[#F45050] transition-all ease-in-out duration-700 text-5xl lg:text-6xl'
+                    : 'text-[#F45050] text-4xl lg:text-5xl'
                 }  `}
               />
             </div>
             <p
               className={`${
-                scrollY > 50 ? 'text-red-primary ' : 'text-white-color'
+                scrollY > 50 ? 'text-[#F45050] ' : 'text-white-color'
               } text-sm font-bold`}
             >
               PT. INTI HURIP
@@ -146,35 +146,17 @@ export const Navbar = () => {
         <div className="fixed inset-0 z-20 bg-red-primary pt-32 px-4 lg:hidden ">
           <div className="flex gap-6 flex-col">
             <div className="font-semibold uppercase text-white-color">
-              <Link
-                onClick={() => setIsOpen(false)}
-                activeClass="font-bold"
-                smooth
-                spy
-                to="about"
-              >
+              <Link onClick={() => setIsOpen(false)} activeClass="font-bold" smooth spy to="about">
                 Tentang Kami
               </Link>
             </div>
             <div className="font-semibold uppercase text-white-color">
-              <Link
-                onClick={() => setIsOpen(false)}
-                activeClass="font-bold"
-                smooth
-                spy
-                to="vimi"
-              >
+              <Link onClick={() => setIsOpen(false)} activeClass="font-bold" smooth spy to="vimi">
                 Visi Misi
               </Link>
             </div>
             <div className="font-semibold uppercase text-white-color">
-              <Link
-                onClick={() => setIsOpen(false)}
-                activeClass="font-bold"
-                smooth
-                spy
-                to="produk"
-              >
+              <Link onClick={() => setIsOpen(false)} activeClass="font-bold" smooth spy to="produk">
                 Produk Kami
               </Link>
             </div>
