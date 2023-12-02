@@ -50,10 +50,10 @@ export const Footer = () => {
             <p className=" ">jl. kisamaun no.179 kel. sukasari kec. tanggerang kota tanggerang </p>
             <div>
               <p>
-                <span className="font-semibold">Phone</span>: +62 21 5521479
+                <span className="font-semibold">Phone</span>: +62 817 5110 817
               </p>
               <p>
-                <span className="font-semibold">Fax:</span> 021-5588175
+                <span className="font-semibold">Email:</span> intihuriptravel@gmail.com
               </p>
             </div>
           </div>
